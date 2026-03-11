@@ -1,0 +1,4 @@
+# Run this command with YOUR NEW API KEY:
+npx supabase secrets set RESEND_API_KEY=re_YOUR_NEW_KEY_HERE
+
+# Then test on localhost:8082

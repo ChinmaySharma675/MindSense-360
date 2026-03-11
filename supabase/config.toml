@@ -1,0 +1,16 @@
+project_id = "ozlmduqomteomyirbwgc"
+
+[functions.submit-behavior]
+verify_jwt = false
+
+[functions.submit-wearable]
+verify_jwt = false
+
+[functions.analyze-voice]
+verify_jwt = false
+
+[functions.predict-risk]
+verify_jwt = false
+
+[functions.admin-analytics]
+verify_jwt = false

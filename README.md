@@ -1,207 +1,170 @@
-⭐ If you like the project, consider **starring the repository**!
-
 # 🧠 MindSense
 
 ### Real-Time Mental Health Early-Warning System
 
-A **privacy-first, AI-assisted platform** that analyzes behavioral patterns, voice stress signals, and wearable data to detect early mental stress risks.
+MindSense is an **AI-assisted mental health awareness platform** that analyzes behavioral patterns, voice stress indicators, and wearable data signals to detect early mental stress risks.
 
-> ⚠️ **Disclaimer:** MindSense does **NOT diagnose mental illness**.
-> It provides **risk awareness and early warning signals only**.
+⚠️ **Disclaimer:**
+MindSense does **not diagnose mental illness**. It provides **risk awareness and preventive insights only**.
 
 ---
 
-# 🌐 Live Demo
+# 🌐 Live Application
 
-🚀 **Live Application:** https://spark-hug-app.lovable.app
-🎥 **Project Demo Video:** https://your-video-link.com
+**Deployed using Lovable**
+
+Live URL:
+`https://spark-hug-app.lovable.app`
+
+---
+
+# 🎥 Project Demo
+
+You can view the demo video of the project here:
+
+`demo/mindsense-demo.mp4`
 
 ---
 
 # 📌 Project Overview
 
-* **Platform:** Responsive Web Application
-* **Architecture:** Full Stack AI System
-* **Frontend:** Next.js (React + TypeScript)
-* **Backend:** FastAPI (Python)
-* **Database:** PostgreSQL
-* **Deployment:** Lovable Platform
-* **Version:** MVP v1.0
+MindSense provides a **privacy-first early warning system** designed to help users recognize potential mental health risks before they escalate.
+
+The platform combines:
+
+* Behavioral activity monitoring
+* Voice stress analysis
+* Wearable health data
+* AI-based risk scoring
+
+---
+
+# ✨ Key Features
+
+### 🔍 Behavioral Analysis
+
+Tracks behavioral indicators that may suggest stress or mental fatigue.
+
+### 🎙 Voice Stress Detection
+
+Analyzes speech signals to detect stress patterns.
+
+### 📊 Risk Scoring Engine
+
+Combines multiple signals to generate a **risk awareness score**.
+
+### 🔐 Privacy-First Design
+
+* No raw personal data stored
+* Secure authentication
+* UUID-based identity
+
+### 📱 Responsive Interface
+
+Fully responsive UI supporting **desktop and mobile devices**.
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* shadcn-ui
+
+### Backend / Services
+
+* Supabase (Authentication + Database)
+
+### Deployment
+
+* Lovable Platform
 
 ---
 
 # 📁 Project Structure
 
 ```
-MindSense/
+MindSense-360/
 │
-├── backend/           # FastAPI backend APIs
-├── frontend/          # Next.js web application
-└── docs/              # Project documentation
+├── src/                # Application source code
+├── components/         # UI components
+├── public/             # Static assets
+├── supabase/           # Supabase configuration
+│
+├── README.md
+├── package.json
+├── vite.config.ts
+├── tailwind.config.ts
+├── postcss.config.js
+└── tsconfig.json
 ```
-
----
-
-# 🚀 Key Features
-
-### 🔍 Multi-Signal Analysis
-
-Analyzes multiple indicators including behavioral patterns, voice signals, and wearable data.
-
-### ⚡ Real-Time Risk Detection
-
-Continuously evaluates user signals to generate early mental stress alerts.
-
-### 🤖 Explainable AI
-
-Risk scores include **clear explanations**, making the system transparent.
-
-### 🔐 Privacy-First Architecture
-
-* UUID-based identity system
-* No raw sensitive data storage
-* Secure authentication
-
-### 📱 Responsive Web Design
-
-Works seamlessly across **desktop and mobile devices**.
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
-
-* Next.js
-* React
-* TypeScript
-* Responsive UI
-
-## Backend
-
-* FastAPI
-* Python
-* JWT Authentication
-* Audio Processing (librosa)
-
-## Database
-
-* PostgreSQL
-
-## Deployment
-
-* Lovable Platform
-* Vercel / Render compatible architecture
-
----
-
-# 🏗 System Architecture
-
-```
-User
-  │
-  ▼
-Next.js Frontend
-  │
-  ▼
-FastAPI Backend
-  │
-  ├── Behavioral Analysis Engine
-  ├── Voice Stress Detection
-  ├── Risk Fusion Engine
-  │
-  ▼
-PostgreSQL Database
-```
-
----
-
-# 📊 Development Status
-
-| Phase                     | Status     |
-| ------------------------- | ---------- |
-| Project Foundation        | ✅ Complete |
-| Backend Core              | ✅ Complete |
-| Behavioral & Wearable AI  | ✅ Complete |
-| Voice AI Pipeline         | ✅ Complete |
-| Risk Fusion Engine        | ✅ Complete |
-| Frontend Web App (MVP)    | ✅ Complete |
-| Real-Time Experience      | ✅ Complete |
-| Admin Analytics Dashboard | ✅ Complete |
-| Security & Privacy        | ✅ Complete |
-| Testing & Validation      | ✅ Complete |
-| Deployment & Launch       | 🚀 Ready   |
 
 ---
 
 # 🚀 Running the Project Locally
 
-## Backend Setup
-
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-```
-
-API docs available at:
+### 1️⃣ Clone the repository
 
 ```
-http://localhost:8000/docs
+git clone https://github.com/ChinmaySharma675/MindSense-360.git
 ```
 
----
+### 2️⃣ Navigate into the project
 
-## Frontend Setup
+```
+cd MindSense-360
+```
 
-```bash
-cd frontend
+### 3️⃣ Install dependencies
+
+```
 npm install
+```
+
+### 4️⃣ Start development server
+
+```
 npm run dev
 ```
 
-Open in browser:
+The application will run on:
 
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 ---
 
-# 🔒 Security & Privacy
+# 🔑 Environment Variables
 
-MindSense follows a **privacy-first system design**:
+Create a `.env` file in the root directory.
 
-* API keys stored securely using environment variables
-* JWT authentication for protected endpoints
-* UUID-based user identity
-* No raw personal or medical data storage
+Example:
 
----
-
-# 📚 Documentation
-
-* Product Requirements → `docs/product_requirements.md`
-* Development Plan → `docs/development_plan.md`
-* Backend Documentation → `backend/README.md`
+```
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
 ---
 
-# 🎯 Future Improvements
+# 📈 Future Improvements
 
-* Mobile application support
-* Improved voice stress ML models
-* Integration with wearable APIs
-* Advanced mental health analytics dashboard
+* Advanced AI mental health prediction models
+* Wearable device API integration
+* Mobile application version
+* Advanced analytics dashboard
 
 ---
 
 # 📝 License
 
-This project is created for **educational and demonstration purposes**.
+This project is developed for **educational and research demonstration purposes**.
 
 ---
 
-
+⭐ If you find this project interesting, consider **starring the repository**.
